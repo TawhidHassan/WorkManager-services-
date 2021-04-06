@@ -20,26 +20,19 @@ import java.util.concurrent.TimeUnit;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private static final String TAG = MainActivity.class.getSimpleName();
+
 
     private Button buttonStart, buttonStop;
     private TextView textViewthreadCount;
-    int count = 0;
 
-    private MyIntentService myService;
-    private boolean isServiceBound;
-    private ServiceConnection  serviceConnection;
+
 
     WorkManager workManager;
 
     /*Handler handler;*/
 
-
-    private  Intent serviceIntent;
-
     private boolean mStopLoop;
     private WorkRequest workRequest;
-
 
 
     @Override
